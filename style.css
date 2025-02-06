@@ -115,3 +115,150 @@ footer {
 }
 
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items to start to avoid overlapping */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+/* Sidebar for Main Tabs */
+.sidebar {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #ccc;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.tab-button {
+    padding: 15px;
+    text-align: left;
+    background: #c9cee8;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.tab-button.active {
+    background: #96b3dd;
+    color: white;
+}
+
+/* Content Area */
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Sub-Sidebar for School Projects */
+.sub-sidebar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px; /* Reduce unnecessary spacing */
+    padding-bottom: 10px; /* Ensures spacing without making a big gap */
+    border-bottom: 2px solid #ddd; /* Optional: Adds a subtle separator */
+}
+
+.sub-tab-button {
+    padding: 10px;
+    text-align: left;
+    background: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.sub-tab-button.active {
+    background: #c9acdf;
+    color: white;
+}
+
+/* Project Details */
+.project-details {
+    margin-top: 0; /* Remove any default margin */
+    padding-top: 10px; /* Minimal padding */
+    clear: both;
+}
+
+.project-content.hidden {
+    display: none;
+}
+
+.project-content img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.project-content {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.project-content p {
+    text-align: left;
+    margin-left: 320px;
+    width: 500px;
+}
+
+
+/* Hide Elements */
+.hidden {
+    display: none;
+}
+
+/* Container for the image slider */
+#image-slider, #bed-slider, #spm-slider, #mad-slider, #fed-slider{
+    position: relative; /* Allows absolute positioning of the buttons */
+    width: 100%; /* Ensure the container takes up the full width */
+    max-width: 600px; /* Optional: restrict the maximum width of the image slider */
+    margin: 0 auto; /* Center the slider horizontally */
+}
+
+/* Style the previous and next buttons */
+#prev-btn, #next-btn, #prev-bed-btn, #next-bed-btn, #prev-spm-btn, #next-spm-btn, #next-mad-btn, #prev-mad-btn, #prev-fed-btn, #next-fed-btn{
+    position: absolute; /* Position the buttons inside the image container */
+    top: 50%; /* Vertically center the buttons */
+    transform: translateY(-50%); /* Adjust for exact vertical centering */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1; /* Ensure the buttons are above the image */
+}
+
+#prev-btn, #prev-bed-btn, #prev-spm-btn, #prev-mad-btn, #prev-fed-btn {
+    left: 10px; /* Position on the left */
+}
+
+#next-btn, #next-bed-btn, #next-spm-btn, #next-mad-btn, #next-fed-btn {
+    right: 10px; 
+}
+
+#prev-btn:hover,#prev-bed-btn, #next-bed-btn, #prev-spm-btn, #next-spm-btn, #next-mad-btn, #prev-mad-btn,#prev-fed-btn, #next-fed-btn, #next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+

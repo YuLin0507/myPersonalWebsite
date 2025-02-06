@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Tan Yu Lin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tan Yu Lin</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about">About Me</a></li>
+                    <li><a href="index.html#education">Education</a></li>
+                    <li><a href="experience.html" class="active">Experience</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="experience-container">
+        <!-- Left Side Vertical Tabs -->
+        <div class="sidebar">
+            <button class="tab-button active" onclick="openMainTab('school-projects-tab')">School Projects</button>
+            <button class="tab-button" onclick="openMainTab('work-experience-tab')">Work Experience</button>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <!-- SCHOOL PROJECTS SECTION -->
+            <div id="school-projects-tab" class="main-tab-content active">
+                <h2>School Projects</h2>
+                <div class="sub-sidebar">
+                    <button class="sub-tab-button active" onclick="showProject('fsdp', this)">FSDP Project</button>
+                    <button class="sub-tab-button" onclick="showProject('spm', this)">SPM Project</button>
+                    <button class="sub-tab-button" onclick="showProject('bed', this)">BED Project</button>
+                    <button class="sub-tab-button" onclick="showProject('mad', this)">MAD Project</button>
+                    <button class="sub-tab-button" onclick="showProject('fed', this)">FED Project</button>
+                </div>
+
+                <div class="project-details">
+                    <div id="fsdp" class="project-content">
+                        <h2>FSDP Group Project (Oct 2024 – Feb 2025)</h2><br>
+                        <p>• Fullstack Development (FSDP)</p>
+                        <p>• Collaborated on OCBC’s Challenge Statement, “ATM Services for Now and Beyond”.</p>
+                        <p>• My part of the 
+                            project was to leverage React.js and Firebase to enhance the interface and frontend design</p>
+                        <p>• focusing on implementing personalized recommendations for an optimized user experience, and implementation of Currency Exchange.</p><br>
+                        <p>• <strong>GitHub:</strong> <a href="https://github.com/chuaqian/FSDP-Project-Group-D">View FSDP Project</a></p>
+                        <div id="image-slider" class="slider">
+                            <img id="project-image" src="ocbc1.png" alt="FSDP Project Screenshot">
+                            <button id="prev-btn" onclick="prevImage()">&#10094;</button>
+                            <button id="next-btn" onclick="nextImage()">&#10095;</button>
+                        </div>                        
+                    </div>
+
+                    <div id="spm" class="project-content hidden">
+                        <h2>SPM Group Project (Jun – Aug 2024)</h3><br>
+                        <p>• Software Project Management (SPM)</p>
+                        <p>• Developed a city-building game using C#.</p>
+                        <p>• Used the Scrum framework to manage tasks and conduct sprints.</p>
+                        <p>• Contributed to game design, coding, and troubleshooting.</p><br>
+                        <p>• <strong>GitHub:</strong> <a href="https://github.com/cottcandy/SPM_Assignment">View SPM Project</a></p>
+                        <div id="spm-slider" class="slider">
+                            <img id="spm-project-image" src="spm.png" alt="SPM Project Screenshot">
+                            <button id="prev-spm-btn" onclick="prevSpmImage()">&#10094;</button>
+                            <button id="next-spm-btn" onclick="nextSpmImage()">&#10095;</button>
+                        </div>
+                    </div>
+
+                    <div id="bed" class="project-content hidden">
+                        <h2>BED Group Project (Jun – Aug 2024)</h3><br>
+                        <p>• Back-End Development (BED)</p>
+                        <p>• Designed and built a volunteer website using HTML, CSS, JavaScript, and SQL.</p>
+                        <p>• Handled front-end and back-end development.</p> <br>
+                        <p>• <strong>GitHub:</strong> <a href="https://github.com/cottcandy/BED2024Apr_P04_T2">View BED Project</a></p>
+                        <div id="bed-slider" class="slider">
+                            <img id="bed-project-image" src="bed1.png" alt="BED Project Screenshot">
+                            <button id="prev-bed-btn" onclick="prevBedImage()">&#10094;</button>
+                            <button id="next-bed-btn" onclick="nextBedImage()">&#10095;</button>
+                        </div>
+                    </div>
+
+                    <div id="mad" class="project-content hidden">
+                        <h2>MAD Group Project (Jun – Aug 2024)</h3><br>
+                        <p>• Mobile App Development (MAD) - App name: Heart Comes First</p>
+                        <p>• Developed a dating app using Android Studio and Java </p>
+                        <p>• Applied key concepts learned in the module to build a functional and engaging user experience.</p>
+                        <p>• Chats Function – Implemented real-time messaging using Firebase Firestore, allowing seamless communication between users.</p>
+                        <p>• Text-to-Speech Function – Integrated accessibility features to convert text messages into speech for enhanced usability.</p>
+                        <p>• Firebase Integration – Utilized Firebase Authentication for secure login and Firebase Firestore for efficient data storage.</p>
+                        <p>• Gained hands-on experience in UI/UX design, database management, and Android app development, enhancing both technical and problem-solving skills.</p><br>
+                        <p>• <strong>GitHub:</strong> <a href="https://github.com/nevawins/MAD24_P02_Team4">View MAD Project</a></p>
+                        <div id="mad-slider" class="slider">
+                            <img id="mad-project-image" src="mad1.png" alt="MAD Project Screenshot">
+                            <button id="prev-mad-btn" onclick="prevMadImage()">&#10094;</button>
+                            <button id="next-mad-btn" onclick="nextMadImage()">&#10095;</button>
+                        </div>
+                    </div>
+
+                    <div id="fed" class="project-content hidden">
+                        <h2>FED Group Project (Jun – Aug 2024)</h2><br>
+                        <p>• Front-End Development (FED)</p>
+                        <p>• Designed and revamped the NP website for open house using HTML, CSS, JavaScript.</p>
+                        <p>• Handled front-end development and API.</p> <br>
+                        <p>• <strong>GitHub:</strong> <a href="https://github.com/cottcandy/BED2024Apr_P04_T2">View FED Project</a></p>
+                        <div id="fed-slider" class="slider">
+                            <img id="fed-project-image" src="fed1.png" alt="FED Project Screenshot">
+                            <button id="prev-fed-btn" onclick="prevFedImage()">&#10094;</button>
+                            <button id="next-fed-btn" onclick="nextFedImage()">&#10095;</button>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <!-- WORK EXPERIENCE SECTION -->
+            <div id="work-experience-tab" class="main-tab-content hidden">
+                <h2>Work Experience</h2>
+                <div class="job">
+                    <h3>McDonald's Service Crew</h3>
+                    <p>March 2023 – Present</p>
+                    <p>• Provided excellent customer service.</p>
+                </div>
+                <div class="job">
+                    <h3>NTUC Temporary Cashier</h3>
+                    <p>Dec 2022 - Jan 2023</p>
+                    <p>• Assisted customers with checkout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Tan Yu Lin. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const images = ["ocbc1.png", "ocbc2.png", "ocbc3.png"];
+        let currentImageIndex = 0;
+
+        function showImage(index) {
+            document.getElementById("project-image").src = images[index];
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        // BED Images Navigation
+        const bedImages = ["bed1.png", "bed2.png", "bed3.png"];
+        let currentBedImageIndex = 0;
+
+        function showBedImage(index) {
+            document.getElementById("bed-project-image").src = bedImages[index];
+        }
+
+        function prevBedImage() {
+            currentBedImageIndex = (currentBedImageIndex - 1 + bedImages.length) % bedImages.length;
+            showBedImage(currentBedImageIndex);
+        }
+
+        function nextBedImage() {
+            currentBedImageIndex = (currentBedImageIndex + 1) % bedImages.length;
+            showBedImage(currentBedImageIndex);
+        }
+
+        // SPM Images Navigation
+        const spmImages = ["spm.png","spm2.png"];
+        let currentSpmImageIndex = 0;
+
+        function showSpmImage(index) {
+            document.getElementById("spm-project-image").src = spmImages[index];
+        }
+
+        function prevSpmImage() {
+            currentSpmImageIndex = (currentSpmImageIndex - 1 + spmImages.length) % spmImages.length;
+            showSpmImage(currentSpmImageIndex);
+        }
+
+        function nextSpmImage() {
+            currentSpmImageIndex = (currentSpmImageIndex + 1) % spmImages.length;
+            showSpmImage(currentSpmImageIndex);
+        }
+
+        // MAD Images Navigation
+        const madImages = ["mad1.png", "mad2.png"];
+        let currentMadImageIndex = 0;
+
+        function showMadImage(index) {
+            document.getElementById("mad-project-image").src = madImages[index];
+        }
+
+        function prevMadImage() {
+            currentMadImageIndex = (currentMadImageIndex - 1 + madImages.length) % madImages.length;
+            showMadImage(currentMadImageIndex);
+        }
+
+        function nextMadImage() {
+            currentMadImageIndex = (currentMadImageIndex + 1) % madImages.length;
+            showMadImage(currentMadImageIndex);
+        }
+
+        // FED Images Navigation
+        const fedImages = ["fed1.png", "fed2.png", "fed3.png", "fed4.png"]; // Add all FED images here
+        let currentFedImageIndex = 0;
+
+        function showFedImage(index) {
+            document.getElementById("fed-project-image").src = fedImages[index];
+        }
+
+        function prevFedImage() {
+            currentFedImageIndex = (currentFedImageIndex - 1 + fedImages.length) % fedImages.length;
+            showFedImage(currentFedImageIndex);
+        }
+
+        function nextFedImage() {
+            currentFedImageIndex = (currentFedImageIndex + 1) % fedImages.length;
+            showFedImage(currentFedImageIndex);
+        }
+
+        function openMainTab(tabId) {
+            // Hide all main tab content
+            document.querySelectorAll('.main-tab-content').forEach(tab => tab.classList.add('hidden'));
+    
+            // Show selected tab
+            document.getElementById(tabId).classList.remove('hidden');
+    
+            // Remove 'active' class from all main tab buttons
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+    
+            // Add 'active' class to clicked tab button
+            event.currentTarget.classList.add('active');
+        }
+    
+        function showProject(projectId, button) {
+            // Hide all project content
+            document.querySelectorAll('.project-content').forEach(project => project.classList.add('hidden'));
+
+            // Show selected project
+            document.getElementById(projectId).classList.remove('hidden');
+
+            // Remove 'active' from all sub-tab buttons
+            document.querySelectorAll('.sub-tab-button').forEach(btn => btn.classList.remove('active'));
+
+            // Add 'active' to clicked sub-tab button
+            button.classList.add('active');
+        }
+
+    
+        // Ensure first project is shown on page load
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.project-content').forEach(project => project.classList.add('hidden'));
+            document.getElementById("fsdp").classList.remove("hidden"); // Show default project
+            document.querySelector(".sub-tab-button").classList.add("active"); // Ensure first button is active
+        });
+
+    </script>
+    
+</body>
+</html>
