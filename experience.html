@@ -9,6 +9,7 @@
 <body>
     <header>
         <div class="container">
+            <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
             <h1>Tan Yu Lin</h1>
             <nav>
                 <ul>
@@ -22,6 +23,18 @@
         </div>
     </header>
 
+    <!-- Sidebar Menu for Mobile -->
+    <div id="sidebar1" class="sidebar1">
+        <button class="close-btn" onclick="toggleMenu()">×</button>
+        <ul>
+            <li><a href="index.html#about" onclick="toggleMenu()">About Me</a></li>
+            <li><a href="index.html#education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="index.html#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+
     <section class="experience-container">
         <!-- Left Side Vertical Tabs -->
         <div class="sidebar">
@@ -34,7 +47,7 @@
             <!-- SCHOOL PROJECTS SECTION -->
             <div id="school-projects-tab" class="main-tab-content active">
                 <h2>School Projects</h2>
-                <div class="sub-sidebar">
+                <div class="sub-sidebar" id="sub-sidebar">                    
                     <button class="sub-tab-button active" onclick="showProject('fsdp', this)">FSDP Project</button>
                     <button class="sub-tab-button" onclick="showProject('spm', this)">SPM Project</button>
                     <button class="sub-tab-button" onclick="showProject('bed', this)">BED Project</button>
@@ -226,6 +239,16 @@
         function nextFedImage() {
             currentFedImageIndex = (currentFedImageIndex + 1) % fedImages.length;
             showFedImage(currentFedImageIndex);
+        }
+
+        // hamburger function
+        function toggleMenu() {
+            let sidebar1 = document.getElementById("sidebar1");
+            if (sidebar1.style.left === "0px") {
+                sidebar1.style.left = "-250px";
+            } else {
+                sidebar1.style.left = "0px";
+            }
         }
 
         function openMainTab(tabId) {
