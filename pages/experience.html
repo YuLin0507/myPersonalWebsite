@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience - Tan Yu Lin</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <button class="hamburger-menu" type="button" aria-label="Open menu" onclick="toggleMenu()">&#9776;</button>
+      <a class="brand" href="../index.html">Tan Yu Lin</a>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html#about">About Me</a></li>
+          <li><a href="../index.html#education">Education</a></li>
+          <li><a href="experience.html" class="active">Experience</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sidebar Menu for Mobile -->
+  <div id="sidebar1" class="sidebar1" aria-hidden="true">
+    <button class="close-btn" type="button" onclick="toggleMenu()">×</button>
+    <ul>
+      <li><a href="../index.html#about" onclick="toggleMenu()">About Me</a></li>
+      <li><a href="../index.html#education" onclick="toggleMenu()">Education</a></li>
+      <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="../index.html#skills" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="../index.html#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      <h2 class="page-title">Experience</h2>
+
+      <section class="experience-container">
+        <!-- Left Side Vertical Tabs -->
+        <div class="sidebar">
+          <button class="tab-button active" data-main-tab="school-projects-tab">School Projects</button>
+          <button class="tab-button" data-main-tab="work-experience-tab">Work Experience</button>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+          <!-- SCHOOL PROJECTS SECTION -->
+          <div id="school-projects-tab" class="main-tab-content">
+            <h3>School Projects</h3>
+
+            <div class="sub-sidebar">
+              <button class="sub-tab-button active" data-project="fsdp">FSDP Project</button>
+              <button class="sub-tab-button" data-project="spm">SPM Project</button>
+              <button class="sub-tab-button" data-project="bed">BED Project</button>
+              <button class="sub-tab-button" data-project="mad">MAD Project</button>
+              <button class="sub-tab-button" data-project="fed">FED Project</button>
+              <button class="sub-tab-button" data-project="cnad">CNAD Project</button>
+            </div>
+
+            <div class="project-details">
+              <!-- FSDP -->
+              <article id="fsdp" class="project-content">
+                <div class="card">
+                  <h4>FSDP Group Project (Oct 2024 – Feb 2025)</h4>
+                  <p>• Fullstack Development (FSDP)</p>
+                  <p>• Collaborated on OCBC’s Challenge Statement: “ATM Services for Now and Beyond”.</p>
+                  <p>• My role: React.js + Firebase UI improvements and frontend enhancements.</p>
+                  <p>• Built personalised recommendations + currency exchange flow.</p>
+                  <p>
+                    • <strong>GitHub:</strong>
+                    <a href="https://github.com/chuaqian/FSDP-Project-Group-D" target="_blank" rel="noopener">View FSDP Project</a>
+                  </p>
+
+                  <div class="slider" data-images="ocbc1.png,ocbc2.png,ocbc3.png">
+                    <img class="slider-img" src="../assets/images/projects/ocbc/ocbc1.png" alt="FSDP Project Screenshot" />
+                    <button class="slider-btn prev" type="button" aria-label="Previous image">&#10094;</button>
+                    <button class="slider-btn next" type="button" aria-label="Next image">&#10095;</button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- SPM -->
+              <article id="spm" class="project-content hidden">
+                <div class="card">
+                  <h4>SPM Group Project (Jun – Aug 2024)</h4>
+                  <p>• Software Project Management (SPM)</p>
+                  <p>• Developed a city-building game using C#.</p>
+                  <p>• Used Scrum to manage tasks and sprints.</p>
+                  <p>
+                    • <strong>GitHub:</strong>
+                    <a href="https://github.com/cottcandy/SPM_Assignment" target="_blank" rel="noopener">View SPM Project</a>
+                  </p>
+
+                  <div class="slider" data-images="spm.png,spm2.png">
+                    <img class="slider-img" src="../assets/images/projects/spm/spm.png" alt="SPM Project Screenshot" />
+                    <button class="slider-btn prev" type="button" aria-label="Previous image">&#10094;</button>
+                    <button class="slider-btn next" type="button" aria-label="Next image">&#10095;</button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- BED -->
+              <article id="bed" class="project-content hidden">
+                <div class="card">
+                  <h4>BED Group Project (Jun – Aug 2024)</h4>
+                  <p>• Back-End Development (BED)</p>
+                  <p>• Built a volunteer website using HTML, CSS, JavaScript, and SQL.</p>
+                  <p>• Worked on both frontend and backend features.</p>
+                  <p>
+                    • <strong>GitHub:</strong>
+                    <a href="https://github.com/cottcandy/BED2024Apr_P04_T2" target="_blank" rel="noopener">View BED Project</a>
+                  </p>
+
+                  <div class="slider" data-images="bed1.png,bed2.png,bed3.png">
+                    <img class="slider-img" src="../assets/images/projects/bed/bed1.png" alt="BED Project Screenshot" />
+                    <button class="slider-btn prev" type="button" aria-label="Previous image">&#10094;</button>
+                    <button class="slider-btn next" type="button" aria-label="Next image">&#10095;</button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- MAD -->
+              <article id="mad" class="project-content hidden">
+                <div class="card">
+                  <h4>MAD Group Project (Jun – Aug 2024)</h4>
+                  <p>• Mobile App Development (MAD) — Heart Comes First</p>
+                  <p>• Built an Android app using Java (Android Studio).</p>
+                  <p>• Implemented real-time chats using Firebase Firestore.</p>
+                  <p>• Added text-to-speech for accessibility.</p>
+                  <p>
+                    • <strong>GitHub:</strong>
+                    <a href="https://github.com/nevawins/MAD24_P02_Team4" target="_blank" rel="noopener">View MAD Project</a>
+                  </p>
+
+                  <div class="slider" data-images="mad1.png,mad2.png">
+                    <img class="slider-img" src="../assets/images/projects/mad/mad1.png" alt="MAD Project Screenshot" />
+                    <button class="slider-btn prev" type="button" aria-label="Previous image">&#10094;</button>
+                    <button class="slider-btn next" type="button" aria-label="Next image">&#10095;</button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- FED -->
+              <article id="fed" class="project-content hidden">
+                <div class="card">
+                  <h4>FED Group Project (Jun – Aug 2024)</h4>
+                  <p>• Front-End Development (FED)</p>
+                  <p>• Revamped the NP website for Open House using HTML, CSS, JavaScript.</p>
+                  <p>• Worked on frontend + API integration.</p>
+                  <p>
+                    • <strong>GitHub:</strong>
+                    <a href="https://github.com/nanditha1707/Assignment2" target="_blank" rel="noopener">View FED Project</a>
+                  </p>
+
+                  <div class="slider" data-images="fed1.png,fed2.png,fed3.png,fed4.png">
+                    <img class="slider-img" src="../assets/images/projects/fed/fed1.png" alt="FED Project Screenshot" />
+                    <button class="slider-btn prev" type="button" aria-label="Previous image">&#10094;</button>
+                    <button class="slider-btn next" type="button" aria-label="Next image">&#10095;</button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CNAD -->
+              <article id="cnad" class="project-content hidden">
+                <div class="card">
+                    <h4>CNAD Project – Bear Café (Docker Deployment)</h4>
+                    <p>• Cloud-Native Application Development (CNAD)</p>
+                    <p>• Developed and containerized a web-based café ordering system called <strong>Bear Café</strong>.</p>
+                    <p>• Built a full-stack application and deployed it using Docker containers.</p>
+                    <p>• Implemented container networking and multi-container architecture.</p>
+                    <p>• Ensured portability and consistent environment setup across systems.</p>
+
+                    <p>
+                    • <strong>Key Skills:</strong>
+                    Docker, Dockerfile, Container Networking, Image Building, Port Mapping, Local Deployment
+                    </p>
+
+                    <p>
+                    • <strong>Role:</strong> Built Docker images, configured containers, tested deployment workflow, and ensured smooth container communication.
+                    </p>
+
+                    <!-- Optional Image Slider -->
+                    <div class="slider" data-images="cnad1.png,cnad2.png,cnad3.png,cnad4.png,cnad5.png,cnad6.png">
+                    <img class="slider-img" src="../assets/images/projects/cnad/cnad1.png" alt="Bear Café Screenshot" />
+                    <button class="slider-btn prev" type="button">&#10094;</button>
+                    <button class="slider-btn next" type="button">&#10095;</button>
+                    </div>
+
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- WORK EXPERIENCE SECTION -->
+          <div id="work-experience-tab" class="main-tab-content hidden">
+            <h3>Work Experience</h3>
+
+            <div class="card">
+              <h4>Edm8ker — Intern as Fullstack Developer </h4>
+              <p>10 Mar 2025 – 25 Jul 2025</p>
+              <p>• Supported the update and maintenance of the Edm8ker website.</p>
+              <p>• Worked on the frontend using Vue.js (Nuxt.js) and the backend CMS using Strapi.</p>
+              <p>• Edited website content and updated pages through Strapi for timely publishing.</p>
+              <p>• Fixed layout, styling, and responsiveness issues across different screen sizes.</p>
+              <p>• Assisted with implementing feature improvements and UI enhancements when required.</p>
+              <p><strong>Tech Stack:</strong> Vue.js (Nuxt.js), Strapi, HTML/CSS, JavaScript</p>
+            </div>
+
+            <div class="card">
+              <h4>McDonald's Service Crew</h4>
+              <p>March 2023 – Present</p>
+              <p>• Provided excellent customer service.</p>
+            </div>
+
+            <div class="card">
+              <h4>NTUC Temporary Cashier</h4>
+              <p>Dec 2022 – Jan 2023</p>
+              <p>• Assisted customers with checkout.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2024-2026 Tan Yu Lin. All rights reserved.</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
